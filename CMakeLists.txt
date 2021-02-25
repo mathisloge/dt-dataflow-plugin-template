@@ -1,10 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
-project(MyPlugin LANGUAGES CXX
-)
+project(MyPlugin LANGUAGES CXX)
 
 find_package(imgui CONFIG REQUIRED)
 find_package(Corrade REQUIRED PluginManager)
-
 
 add_subdirectory(dt-dataflow)
 
