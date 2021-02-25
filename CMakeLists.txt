@@ -28,6 +28,6 @@ target_link_libraries(MyPlugin PRIVATE
     imgui::imgui
     imgui::imnodes
     Corrade::PluginManager
-    dt::DtDfCore
-    dt::DtDfPlugin
+    dt::DtDataflowCore
+    dt::DtDataflowPlugin
 )
