@@ -29,6 +29,7 @@ target_link_libraries(MyPlugin PRIVATE
     imgui::imgui
     imgui::imnodes
     Corrade::PluginManager
+    Magnum::Magnum
     Magnum::GL
     dt::DtDataflowCore
     dt::DtDataflowPlugin
