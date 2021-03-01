@@ -6,6 +6,12 @@
         "nlohmann-json",
         "corrade",
         {
+            "name": "magnum",
+            "features":[
+                "gl"
+            ]
+        },
+        {
             "name": "imgui",
             "features": [
                 

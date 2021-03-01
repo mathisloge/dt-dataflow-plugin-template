@@ -1,4 +1,5 @@
 #include <Corrade/PluginManager/AbstractManager.h>
+#include <Magnum/GL/OpenGL.h>
 #include <dt/df/plugin/plugin.hpp>
 #include <imnodes.h>
 
@@ -13,8 +14,9 @@ class MyPlugin final : public Plugin
         : Plugin{manager, plugin}
     {}
 
-    void setup(ImGuiContext *imgui_ctx, imnodes::Context *imnodes_ctx)
+    void setup(Magnum::GL::Context &gl_ctx, ImGuiContext *imgui_ctx, imnodes::Context *imnodes_ctx)
     {
+        flextGLInit(gl_ctx);
         ImGui::SetCurrentContext(imgui_ctx);
         imnodes::SetCurrentContext(imnodes_ctx);
     }
