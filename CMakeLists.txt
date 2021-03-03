@@ -4,8 +4,7 @@ project(MyPlugin LANGUAGES CXX)
 find_package(imgui CONFIG REQUIRED)
 find_package(Corrade REQUIRED PluginManager)
 find_package(Magnum REQUIRED GL)
-
-add_subdirectory(dt-dataflow)
+find_package(DtDataFlow CONFIG REQUIRED)
 
 set(SOURCES         
     src/plugin.cpp
@@ -26,11 +25,11 @@ target_include_directories(
 )
 
 target_link_libraries(MyPlugin PRIVATE 
-    imgui::imgui
-    imgui::imnodes
     Corrade::PluginManager
     Magnum::Magnum
     Magnum::GL
+    imgui::imgui
+    dt::imnodes
     dt::DtDataflowCore
     dt::DtDataflowPlugin
 )
