@@ -6,6 +6,10 @@ find_package(Corrade REQUIRED PluginManager)
 find_package(Magnum REQUIRED GL)
 find_package(DtDataFlow CONFIG REQUIRED)
 
+set(DTDF_PLUGIN_INSTALL_DBG_DIR ${CMAKE_INSTALL_PREFIX}/bin/dataflow/dbg)
+set(DTDF_PLUGIN_INSTALL_REL_DIR ${CMAKE_INSTALL_PREFIX}/bin/dataflow/rel)
+
+
 set(SOURCES         
     src/plugin.cpp
 )
