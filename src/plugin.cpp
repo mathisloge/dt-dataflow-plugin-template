@@ -21,9 +21,9 @@ class MyPlugin final : public Plugin
         ImGui::SetCurrentContext(imgui_ctx);
         imnodes::SetCurrentContext(imnodes_ctx);
     }
-    void registerNodeFactories(IGraphManager &graph)
+    void registerNodeFactories(core::IGraphManager &graph)
     {}
-    void registerSlotFactories(IGraphManager &graph)
+    void registerSlotFactories(core::IGraphManager &graph)
     {}
 };
 } // namespace dt::df::plugin
